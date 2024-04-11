@@ -1,0 +1,123 @@
+/* Import a Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Apply a simple reset for spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Use the imported font and set some basic background and text colors */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* Style the header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-left img.profile-pic {
+    width: 100px; /* Adjust based on your preference */
+    height: 100px; /* Adjust based on your preference */
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.header-left div {
+    text-align: left;
+}
+
+header h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+header p {
+    font-size: 20px;
+    color: #555;
+}
+
+/* Optional: Style the phone number */
+.header-right p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    text-align: right;
+}
+
+/* Add some styling to sections for better spacing and separation */
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style h2 for section titles */
+h2 {
+    border-bottom: 2px solid #eaeaea;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Style the experience and education articles/lists */
+article, ul {
+    margin-top: 10px;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+/* Style the list of skills */
+.skills ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills li {
+    flex: 1 1 150px; /* Adjust the min-width to fit your design */
+    margin-bottom: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-left, .header-right {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .header-left img.profile-pic {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .header-left div, .header-right p {
+        text-align: center;
+    }
+
+    .skills ul {
+        flex-direction: column;
+    }
+}
